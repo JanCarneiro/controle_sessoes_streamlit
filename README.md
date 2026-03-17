@@ -1,4 +1,4 @@
-# Psi Gestão de Atendimento 🧠📊
+# Psi Gestão de Atendimento 
 
 O **Psi Gestão de Atendimento** é uma aplicação desenvolvida para psicólogos que buscam ter maior controle sobre seus atendimentos e faturamento. Todos os dados são armazenados localmente em um banco de dados relacional (SQLite).
 
@@ -35,13 +35,13 @@ No terminal, dentro da pasta do projeto:
 
 ```bash
 # Criar o ambiente virtual
-python -m venv venv
+python -m venv .venv
 
 # Ativar o ambiente virtual
 # No Windows:
-venv\Scripts\activate
+.venv\Scripts\activate
 # No Linux/Mac:
-source venv/bin/activate
+source .venv/bin/activate
 
 # Com o ambiente virtual ativado, instale todas as bibliotecas necessárias de uma só vez:
 
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 No terminal, dentro da pasta do projeto:
 
 ```bash
-streamlit run src/app.py
+streamlit run src/main.py
 ```
 
 ### 4. Estrutura das pastas
@@ -62,7 +62,7 @@ PsiGestao/
 ├── .venv/                     # Ambiente virtual (isolamento de pacotes)
 ├── data/                      # Banco de dados SQLite (clinica.db)
 ├── src/
-│   └── app.py                 # Script principal da aplicação
+│   └── main.py                 # Script principal da aplicação
 ├── iniciar_atendimento.bat    # Arquivo bat para inicializar a execução
 ├── Iniciar.vbs                # Arquivo vbs para chamar o .bat sem terminal
 ├── requirements.txt           # Lista de dependências do projeto
